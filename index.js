@@ -13,7 +13,7 @@ module.exports = function(source) {
   var done = this.async();
   var options = loaderUtils.parseQuery(this.query);
   options.filename = options.filename || this.resourcePath;
-  options.Evaluator = CachedPathEvaluator;
+  //options.Evaluator = CachedPathEvaluator;
 
   var stylusOptions = this.options.stylus || {};
   options.use = options.use || stylusOptions.use || [];
